@@ -1,38 +1,115 @@
+:root {
+    --primary-color: rgb(41, 3, 41);
+    --secondary-color: whitesmoke;
+}
+
 .App {
-  text-align: center;
+    background: var(--secondary-color);
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.darkmode {
+    background: var(--primary-color);
+    height: 100vh;
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.whitemode {
+    color: black;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.d-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 40px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-flex {
+    flex-direction: row;
+    list-style: none;
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+.list-flex li {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.list-flex .special {
+    margin-right: 3rem;
+    cursor: auto;
+}
+
+.list-flex .special-2 {
+    margin-left: 2rem;
+}
+
+.checked {
+    height: 30px;
+    cursor: pointer;
+    width: 30px;
+    color: white;
+    background-color: white;
+    clip-path: circle();
+    margin-right: 14px;
+}
+
+.check {
+    height: 30px;
+    width: 30px;
+    margin-right: 14px;
+    color: transparent;
+    cursor: pointer;
+    background-color: rgb(219, 203, 203);
+    border: solid 1px white;
+    clip-path: circle();
+}
+
+.todos {
+    background-color: rgb(49, 6, 88);
+    margin-top: 30px;
+    color: white;
+    padding: 14px;
+    border-radius: 7px;
+    border: solid 1px gray;
+    width: 24rem;
+    max-height: 24rem;
+    overflow-y: scroll;
+}
+
+.stroke {
+    opacity: 0.7;
+}
+
+form > input {
+    margin-top: 30px;
+    width: 18rem;
+    margin-right: 12px;
+    color: white;
+    border: solid 1px gray;
+    background: rgb(30, 3, 54);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+#btn {
+    margin-top: 30px;
+    background-color: rgb(49, 4, 88);
+    color: white;
+    border-radius: 8px;
+    border: solid 1px gray;
+    padding: 7px;
+    font-size: 12px;
 }
